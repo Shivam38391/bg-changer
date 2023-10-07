@@ -1,30 +1,17 @@
 import { useState } from "react";
+import button from "./components/button";
+import PassswordApp from "./components/Password";
+import CurrencyApp from "./CurrencyApp";
 
 import "./App.css";
-// import Card from "./components/card";
-
-// import Button from "./components/button";
-import button from "./components/button";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [color, setColor] = useState("olive");
 
   console.log(button);
 
-  // let myobj = {
-  //   username: "developer",
-  //   age: "31",
-  // };
-
   return (
     <>
-      {/* <h1 className="bg-green-400  text-black p-4 rounded-2xl mb-3">
-        Tailwind test
-      </h1> */}
-      {/* <Card username="shivam" myArry={myobj} /> */}
-      <br />
-
       <div
         className="w-full h-screen duration-300"
         style={{ backgroundColor: color }}
@@ -89,6 +76,11 @@ function App() {
             </button>
           </div>
         </div>
+
+        <PassswordApp />
+
+
+        <CurrencyApp/>
       </div>
     </>
   );
